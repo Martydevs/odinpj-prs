@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: light dark;
+  font-family: Helvetica, system-ui;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  gap: 2rem;
+}
+
+@media (min-width: 300px) {
+  main {
+    flex-flow: column-reverse wrap;
+  }
+}
+
+form {
+  margin: 1rem;
+}
+
+select {
+  padding: 1.2rem;
+  font-size: 1.8em;
+  font-weight: bold;
+  border: 1px solid #202020;
+  border-radius: 0.4rem;
+}
+
+button {
+  padding: 1.2rem;
+  font-size: 1.8em;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: 1px solid #202020;
+  background-color: dodgerblue;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #202020;
+  color: white;
+  border: 2px solid #1e90ff;
+}
+
+.results {
+  display: grid;
+  place-items: center;
+  margin: 1rem;
+}
+
+.results h2 {
+  font-size: 3.4em;
+  font-weight: bold;
+}
+
+.results p {
+  margin: 0.5rem;
+  font-size: 1.8em;
+}
+
+.header-container {
+  display: grid;
+  place-content: center;
+  padding: 3rem;
+  width: 100%;
+  background-color: #202020;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0.8rem;
+}
+
+.header-icons img {
+  transition: all 0.3s ease-in-out;
+  height: 98px;
+  filter: grayscale(100%)
+}
+
+.header-icons img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+
+.header {
+  margin: 0.8rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header h1 {
+  font-size: 3.8em;
+  font-weight: bolder;
+  color: dodgerblue;
+}
+
+.header p {
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.winner {
+  color: green;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.loser {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tie {
+  color: gray;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Martydevs" />
+    <meta name="description" content="Aplicación Web con Typescript y Vitejs" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>TypeScript Web App</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-icons">
+        <a href="https://www.typescriptlang.org/" target="_blank">
+          <img src="./public/typescript.svg" alt="TypeScript Logo" />
+        </a>
+        <a href="https://www.typescriptlang.org/" target="_blank">
+          <img src="./public/octocat.svg" alt="Github Logo" />
+        </a>
+        <a href="https://www.vitejs.dev" target="_blank">
+          <img src="./public/vite.svg" alt="Vite Logo" />
+        </a>
+      </div>
+      <div class="header">
+        <h1>Piedra Papel o Tijeras</h1>
+        <p>Aplicación Web con Typescript y Vitejs</p>
+      </div>
+    </header>
+    <main>
+      <form id="playerForm" autocomplete="off">
+        <select id="playerChoice">
+          <option selected disabled>Selecciona una opción</option>
+          <option value="0">Piedra</option>
+          <option value="1">Papel</option>
+          <option value="2">Tijera</option>
+        </select>
+        <button type="submit">Evaluar</button>
+        <button type="reset" id="reset">Reiniciar</button>
+      </form>
+      <article>
+        <section class="results">
+          <h2 id="headerResults">Resultados</h2>
+          <p>Jugador: <span id="playerSelected"></span></p>
+          <p>CPU: <span id="cpuSelected"></span></p>
+        </section>
+      </article>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
