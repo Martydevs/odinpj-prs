@@ -43,9 +43,8 @@ playerForm.addEventListener("submit", (event) => {
 });
 
 resetBtn.addEventListener("click", () => {
-  cpuChoice = randomNumber(3);
-  cpuSelected.textContent = Choice[cpuChoice]
-  playerSelected.textContent = setUserChoice(playerChoice.value)
+  cpuSelected.textContent = ""
+  playerSelected.textContent = ""
   headerResults.textContent = "Elije una opción";
   headerResults.setAttribute("class", "")
   playerSelected.setAttribute("class", "")
